@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>我的相册</title>
+	<link rel="stylesheet" type="text/css" href="css/head.css" media="all"/>
+	<link rel="stylesheet" type="text/css" href="css/photo.css" media="all"/>
+</head>
+<body>
+	<div id="lan">
+		<ul>
+			<li><a href="qq.html" target="_self">主页</a></li>
+			<li><a href="#">日志</a></li>
+			<li><a href="#">相册</a></li>
+			<li><a href="#">个人档案</a></li>
+			<li><a href="#">音乐</a></li>
+			<li><a href="#">留言板</a></li>
+			<li><a href="#">说说</a></li>
+			<li><a href="qq_time.html">时光轴</a></li>
+			<li><a href="#">更多</a></li>
+		</ul>
+		
+	</div>
+	<div id="title">随风的<strong>QQ</strong>空间</div>
+	<div id="face"></div>
+	<div id="con">
+		<ul>
+			<li id="first">
+				<span>我的童年</span>
+				<div class="info">
+					<ul>
+					<li><img src="images_photo/child_photo/child_1.jpg"></li>
+					<li><img src="images_photo/child_photo/child_2.jpg"></li>
+					<li><img src="images_photo/child_photo/child_3.jpg"></li>
+					<li><img src="images_photo/child_photo/child_4.jpg"></li>
+					<li><img src="images_photo/child_photo/child_5.jpg"></li>
+					<li><img src="images_photo/child_photo/child_6.jpg"></li>									
+					</ul>
+				
+				</div>
+			</li>
+			<li id="second">
+				<span>我的高中</span>
+				<div class="info1">
+				
+					<ul>
+					<li><img src="images_photo/photo_bg.jpg"></li>
+					<li><img src="images_photo/photo_bgsmall.png"></li>
+					<li><img src="images_photo/photo_bg.jpg"></li>
+					<li><img src="images_photo/photo_bg.jpg"></li>
+					<li><img src="images_photo/photo_bg.jpg"></li>
+					</ul>
+				</div>
+			</li>
+			<li id="third">
+				<span>我的大学</span>
+				<div class="info2">
+				
+				
+				</div>
+			</li>
+			<li id="forth">
+				<span>我的同学</span>
+				<div class="info">
+				
+				
+				</div>
+			</li>
+			<li id="fifth">
+				<span>我的旅行</span>
+				<div class="info">
+				
+				
+				</div>
+			</li>
+			<li id="sixth">
+				<span>其他</span>
+				<div class="info">
+				
+				
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+	<div id="cover">
+		<div class="imgshow">
+			<img  class="left"  src="images_photo/left_icon.png">
+			<img class="right"  src="images_photo/right_icon.png">
+			<img class="show" src="#">
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="js/head.js"></script>
+	<script type="text/javascript">
+		/*相册的上下拉动事件*/
+		var _index;
+		$("#con>ul>li>span").click(function(){
+						
+			if($(this).parent().css('height')=='30px'){
+			    $(this).parent().animate({height:"520px"},500);
+			}else{
+			
+				 $(this).parent().animate({height:"30px"},500);
+				
+			}
+			
+		});
+		/*图片放大是事件*/
+		$("#con>ul>li>div>ul>li>img").click(function(){
+			 _index=$(this).parent().index();
+			var bg_img=$(this).attr("src");
+		  $("#cover .imgshow .show").attr("src",bg_img);
+			$("#cover").show();
+		});
+		$("#cover").click(function(){
+			$(this).hide();
+		});
+		/*放置向上冒泡*/
+		$('.imgshow').click(function(){
+			event.preventDefault();
+			return false;
+		});
+		/*图片的右切换事件*/
+		$("#cover .imgshow .right").click(function(){		
+				_index++;
+			if(_index>5){_index=0;}
+			/*找到下一张图所在的li*/
+			var _li=$(".info li:eq("+_index+")");
+			var _src=_li.children('img').attr("src");
+			$("#cover .imgshow .show").attr("src",_src);
+		});
+		
+		/*图片的左切换事件*/
+		
+		$("#cover .imgshow .left").click(function(){		
+				_index--;
+			if(_index<0){_index=5;}
+			/*找到下一张图所在的li*/
+			var _li=$(".info li:eq("+_index+")");
+			var _src=_li.children('img').attr("src");
+			$("#cover .imgshow .show").attr("src",_src);
+		});
+		
+		
+		
+		
+		
+	</script>
+</body>
+</html>

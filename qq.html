@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qq空间说说发表</title>
+	
+	<style type="text/css">
+		*{
+			margin: 0px;
+		}
+		body{
+			background: url("my/bg.jpg");
+			height:2000px;
+		
+		}
+		.con{
+			width:520px;
+			height:165px;
+			margin: 260px auto ;
+			padding: 0px auto auto;
+			background: #3366FF;
+			border-radius: 5px;
+		}
+		.con .msg{
+			background: #fff;
+			width:508px;
+			height: 70px;
+			border:1px solid ;
+			border-radius: 5px;	
+			margin-left: 5px;
+			overflow: hidden;
+		}
+		.con p{
+			
+			height:40px;
+			font-size: 13px;
+			line-height: 40px;
+			font-family: '微软雅黑';
+			margin: 10px;
+		}
+		.con .show{
+			height:50px;
+			
+		
+		}
+		#send{
+			display:inline-block;
+			width:65px;
+			height:30px;
+			background: #3300FF;
+			text-align: center;
+			line-height: 30px;
+		  border-radius: 5px;
+			float: right;
+			margin: 10px ;
+			font-family: '微软雅黑';
+			cursor: pointer;
+		}
+		.con .show img{
+			margin: 10px;
+			cursor:pointer;
+		}
+		#tx{
+			position:absolute;
+			width:324px;
+			height:175px;
+			background: #fff;
+			top:410px;
+			left: 400px;
+			border-radius: 5px;
+			border: 1px solid;
+			display: none;
+			cursor: pointer;
+		}
+		#tx ul{
+			margin:5px;
+			padding:2px;
+			width: 306px;
+			height:155px;
+		}
+		#tx ul li{
+			list-style-type: none;
+			float:left;
+			margin:2px;
+		}
+		.dia{
+			width:520px;
+			height:600px;
+			margin:-200px auto;
+			border-radius:5px; 
+		}
+		.dia .one{
+			width:520px;
+			height:auto ;
+			background: #3366FF;
+			border-radius: 5px;
+			margin-top: 10px;		
+		}
+		.dia .one dl dt img{
+			border-radius: 30px;
+		}
+		.dia .one dl dt{
+			width:60px;
+			height:60px;
+			float: left;
+		}
+		.dia .one dl dd{
+			width:420px;
+			height:40px;
+			margin-top: 20px;
+			text-align: center;
+			line-height: 40px;
+			font-family: '微软雅黑';
+			font-size:20px;
+			
+		}
+		.dia .one dl p{
+			clear: both;
+		}
+		#fs{
+			font-size: 14px;
+			font-family: '微软雅黑';
+			width:500px;
+			height:auto;
+			margin-top: 50px;
+			margin-left: 10px;
+		}
+		#title{
+			position:absolute;
+			color:aliceblue;
+			top: 40px;
+			left:70px;
+			font-size: 40px;
+		}
+		#face{
+			width:122px;
+			height:122px;
+			background: url("my/face.png");
+			position: absolute;
+			top:120px;
+			left:140px;
+			border:2px solid #3333CC;
+			
+		}
+		#lan{
+		position: absolute;
+			top:205px;
+			left:350px;
+		}
+		#lan ul li{
+			list-style-type: none;
+			float: left;
+			margin: 10px;
+		}
+		#lan ul li a{
+			color:aliceblue;
+			text-decoration: none;
+			font-family: '微软雅黑';
+		}
+		 .dia .one #time{
+			 font-size: 12px;
+			margin-left: 10px;
+			 width:500px;
+			 display:inline-block;
+			 text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div id="lan">
+		<ul>
+			<li><a href="#" target="_self">主页</a></li>
+			<li><a href="#">日志</a></li>
+			<li><a href="qq_photo.html" target="_self">相册</a></li>
+			<li><a href="#">个人档案</a></li>
+			<li><a href="#">音乐</a></li>
+			<li><a href="#">留言板</a></li>
+			<li><a href="#">说说</a></li>
+			<li><a href="qq_time.html" target="_self">时光轴</a></li>
+			<li><a href="#">更多</a></li>
+		</ul>
+		
+	</div>
+	<div id="title">随风的<strong>QQ</strong>空间</div>
+	<div id="face"></div>
+	<div class="con">
+		<p>有什么新鲜事要告诉大家？</p>
+		<div class="msg" contentEditable='true'></div>
+		<div class="show">
+			<img src="images/bba_thumb.gif" id="touxiang">
+			<span id="send"> 发表</span>
+		</div>
+		<div id="tx">
+			<ul>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+				<li><img src="images/angrya_thumb.gif" title="生气"></li>
+			</ul>
+			
+			
+		</div>
+	</div>
+	<div class="dia">
+		<div class="one">
+			<dl>
+				<dt><img src="my/head.png"></dt>
+				<dd>--------随风--------<span  id="time"></span></dd>
+			  <p id="fs">今天天气不错！！</p>
+			</dl>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$("#touxiang").click(function(e){
+			$("#tx").slideDown();
+			e.stopPropagation();
+		});
+		$(document).click(function(){},function(){
+			$("#tx").slideUp();
+		});
+		$("#tx ul li").click(function(){
+			var img=$(this).find("img").clone();
+			$(".msg").append(img);
+		});
+		$("#send").click(function(){
+			var txt=$(".msg").html();
+			if(txt==""){
+				$(".msg").focus();
+			}else{
+					$(".dia").append("<div class='one'><dl><dt><img src='my/head.png'></dt><dd>---------随风---------<span  id='time'>"+time()+"</span></dd><p id='fs'>"+$(".msg").html()+"</p></dl></div>");
+				
+			}
+			$(".msg").html("");
+		});
+			function time(){
+			var time;
+			var today = new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+		  m=checkTime(m);
+			s=checkTime(s);
+			time=h+":"+m+":"+s;
+			return time;
+		}
+
+		function checkTime(i)
+		{
+			if (i<10) 
+  			{i="0" + i}
+  			return i
+		}
+	
+	</script>
+	<script type="text/javascript" src="js/head.js"></script> 
+</body>
+</html>

@@ -1,0 +1,142 @@
+body{
+	height:2000px;
+}
+*{
+		padding:0px;
+		margin: 0px;
+}
+#con{
+		
+width:650px;
+height:680px;
+margin:330px auto;
+background: url("../images_photo/photo_bgsmall.png");
+box-shadow: 0px  0px 20px blue;
+border-radius:10px;
+border:1px solid;
+	border-radius=5px;
+}
+#con ul{
+	width:650px;
+	height:200px;
+}
+ #con ul li{
+color:blue;
+margin-top: 1px;
+height: 30px;
+text-align: center;
+font-family: '微软雅黑';
+font-size: 20px;
+list-style-type: none;
+overflow: hidden;
+
+}
+#con #first{
+background-color:aquamarine;
+}
+
+ #con .info{
+  background-color: aliceblue;
+	width:625px;
+	height:470px;
+	margin: 5px auto;
+	background: url("../my/chirld.JPG");
+	 
+}
+#con .info1{
+background-color: aliceblue;
+width:625px;
+height:470px;
+margin: 5px auto;
+background: url("../my/seniorbg.JPG");
+border:1px solid;
+box-shadow: 0px 0px 5px black;
+
+}
+#con #second{
+background-color: #eaae17;
+
+}
+#con #third{
+background-color: #ffff00;
+}
+#con #forth{
+background-color:#2cb733;
+}
+#con #fifth{
+background-color:#25b3db;
+}
+#con #sixth{
+background-color:#4b5ef2;
+}
+
+
+#con>ul>li>div>ul>li{
+	width: 110px;
+	height:110px;
+	float: left;
+	margin: 7px;
+	cursor:pointer;
+}
+#con>ul>li>div>ul>li img{
+	width:110px;
+	height:110px;
+
+}
+#con>ul>li span{
+
+	display:inline-block;
+	width:650px;
+	height:30px;
+	cursor:pointer;
+}
+
+
+/*图片的弹出背景*/
+
+#cover{
+	position: fixed;
+	top:0px;
+	left: 0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.8);
+	display: none;
+}
+/*弹出背景中的div*/
+ 
+#cover .imgshow{
+	position: absolute;
+	top:200px;
+	left:390px;
+	width:480px;
+	height:520px;
+	border-radius: 10px;
+	background-color: aliceblue;
+	border: 20px solid #eaea3f;
+	background-position:center;
+}
+#cover .imgshow .show{
+	width:480px;
+	height:520px;
+}
+
+#cover .imgshow .left{
+	position: absolute;
+	left:-50px;
+	top:220px;
+	cursor: pointer;
+}
+#cover .imgshow .right{
+	position: absolute;
+	right:-50px;
+	top:220px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,43 @@
+body{
+	background: url("../images_photo/photo_bg.jpg");
+	background-repeat:round;
+	background-attachment: fixed;
+
+}
+
+*{
+			margin: 0px;
+	}
+
+
+#title{
+			position:absolute;
+			color:aliceblue;
+			top: 40px;
+			left:70px;
+			font-size: 40px;
+}
+	#lan{
+		position: absolute;
+			top:205px;
+			left:350px;
+		}
+		#lan>ul>li{
+			list-style-type: none;
+			float: left;
+			margin: 10px;
+		}
+		#lan ul li a{
+			color:aliceblue;
+			text-decoration:none;
+			font-family: '微软雅黑';
+		}
+	#face{
+			width:122px;
+			height:122px;
+			background: url("../my/face.png");
+			position: absolute;
+			top:120px;
+			left:140px;
+			border:2px solid #3333CC;
+			

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>qq_map</title>
+	<style type="text/css">
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		
+		body{margin:0;height:100%;width:100%;position:absolute;}
+		#mapContainer{height:100%;width:100%;}
+		#Menu{
+			width:270px;
+			height:380px;
+			background-color: aliceblue;
+			position: absolute;
+			top: 20px;
+			left:20px;
+			background-color: rgba(0,105,155,0.3);
+			border-radius: 5px;
+		}
+		#search{
+			width:260px;
+			height:40px;
+			background-color: aqua;	
+			padding: 5px;
+			border-radius: 5px;
+		}
+		#Menu #search input{
+			width:auto;
+			height:30px;
+			margin-left:15px;
+			border-left:none;
+			float:left;
+			padding:0px;
+			
+		}
+		
+		#Menu #search button{
+			margin:0px;
+			display:block;
+			width:50px;
+			height:34px;
+			background: url("images/search_icon.png");
+			background-position: center;
+			background-repeat: no-repeat;
+		
+		}
+		#head_icon{
+			width:100px;
+			height:100px;
+			background-color: aqua;
+			position:absolute;
+			top:50px;
+			right:100px;
+			background: url("images/head_icon.jpg");
+			border-radius:100px;
+		}
+		#list ul li{
+			float: left;
+			width:60px;
+			height:60px;
+			background-color: aqua;
+			margin-left: 20px;
+			margin-top:20px;
+			border-radius: 5px;
+			list-style-type: none;
+			box-shadow: 0px 0px 10px #333030;
+		}
+	</style>
+</head>
+<body>
+	  
+		<div id="mapContainer"></div>
+		<div id="head_icon"></div>
+		<div id="Menu">
+			<div id="search">
+				<input type="text" id="cityName" placeholder="请输入城市的名称">
+				<button type="button" id="query"></button>
+			</div>
+			<div id="list">
+				<ul>
+					<li>1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+				</ul>
+			</div>
+		</div>
+	
+<script type="text/javascript" src="js/mylib.js"></script>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=39e78a8d92ffedd94660d76eba3aeb70">
+</script>
+<script type="text/javascript" src="js/map_fun.js"></script>
+
+</body>
+</html>
